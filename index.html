@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Text Example</title>
+</head>
+<body>
+<h1 id="blanders">No Message Yet!</h1>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+  var blanders = document.getElementById('blanders');
+  var socket = io();
+  socket.on('txt', function (msg) {
+    blanders.innerHTML = msg.Body + ' - ' + msg.From;
+  });
+</script>
+</body>
+</html>

@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/zachlatta/twilio-color-demo",
   "dependencies": {
-    "express": "^4.9.5"
+    "express": "^4.9.5",
+    "twilio": "^1.7.0"
   }
 }

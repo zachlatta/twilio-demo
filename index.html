@@ -7,10 +7,10 @@
 <h1 id="msg">No Message Yet!</h1>
 <script src="/socket.io/socket.io.js"></script>
 <script>
-  var msg = document.getElementById('msg');
+  var msgElement = document.getElementById('msg');
   var socket = io();
   socket.on('txt', function (msg) {
-    blanders.innerHTML = msg.Body + ' - ' + msg.From;
+    msgElement.innerHTML = msg.Body + ' - ' + msg.From;
   });
 </script>
 </body>
